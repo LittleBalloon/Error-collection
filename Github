@@ -1,0 +1,19 @@
+Cloning into 'Firmware'...
+remote: Enumerating objects: 216, done.
+remote: Counting objects: 100% (216/216), done.
+remote: Compressing objects: 100% (127/127), done.
+error: RPC failed; curl 18 transfer closed with outstanding read data remaining
+fatal: The remote end hung up unexpectedly
+fatal: early EOF
+fatal: index-pack failed
+/*错误解决方案*/
+1.git config --global http.postBuffer 524288000
+2.sudo vi /etc/hosts
+	#fix git clone github project failed
+	151.101.185.194 global-ssl.fastly.net
+	192.30.253.113 github.com
+3.刷新DNS缓存
+	sudo /etc/init.d/networking restart
+	或
+	sudo killall -HUP mDNSResponder
+	sudo dscacheutil -flushcache
