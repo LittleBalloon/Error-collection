@@ -1,0 +1,25 @@
+-- PX4 VERSION: v1.8.0-1713-gd7c34dd
+-- CONFIG: nuttx_px4fmu-v2_default
+-- Build Type: MinSizeRel
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/ivens/.gcc-arm-none-eabi/bin/arm-none-eabi-gcc
+-- Found PythonInterp: /usr/bin/python (found version "2.7.12") 
+-- Found PY_jinja2: /usr/lib/python2.7/dist-packages/jinja2  
+-- C compiler: arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.9.3 20150529 (release) [ARM/embedded-4_9-branch revision 227977]
+-- C++ compiler: arm-none-eabi-g++ (GNU Tools for ARM Embedded Processors) 4.9.3 20150529 (release) [ARM/embedded-4_9-branch revision 227977]
+-- PX4 ECL: Very lightweight Estimation & Control Library v0.9.0-603-g10a0fef
+-- Building and including px4io-v2
+-- NuttX: px4fmu-v2 nsh cortex-m4
+-- ROMFS: px4fmu_common
+CMake Error at ROMFS/CMakeLists.txt:142 (message):
+  genromfs not found
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/ivens/Documents/src/Firmware/build/nuttx_px4fmu-v2_default/CMakeFiles/CMakeOutput.log".
+make[1]: *** /home/ivens/Documents/src/Firmware/build/nuttx_px4fmu-v2_default: No such file or directory.  Stop.
+Makefile:176: recipe for target 'px4fmu-v2_default' failed
+make: *** [px4fmu-v2_default] Error 2
+
+/*solution*/
+sudo apt-get install genromfs
