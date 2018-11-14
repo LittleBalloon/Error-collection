@@ -1,0 +1,120 @@
+[  0%] Built target git_nuttx
+[  0%] Built target git_nuttx_apps
+[  0%] Building px4io-v2
+[  0%] Built target uorb_headers
+make[4]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+Scanning dependencies of target ver_gen
+[  0%] Generating git version header
+[  1%] Generating mixer_multirotor.generated.h
+[  1%] Generating mixer_multirotor_6dof.generated.h
+('python import error: ', ImportError('No module named toml',))
+
+Required python packages not installed.
+
+On a GNU/Linux or MacOS system please run:
+  sudo pip install numpy toml
+
+On Windows please run:
+  easy_install numpy toml
+
+src/lib/mixer/CMakeFiles/mixer_gen.dir/build.make:82: recipe for target 'src/lib/mixer/mixer_multirotor.generated.h' failed
+make[3]: *** [src/lib/mixer/mixer_multirotor.generated.h] Error 1
+CMakeFiles/Makefile2:3167: recipe for target 'src/lib/mixer/CMakeFiles/mixer_gen.dir/all' failed
+make[2]: *** [src/lib/mixer/CMakeFiles/mixer_gen.dir/all] Error 2
+make[2]: *** Waiting for unfinished jobs....
+('python import error: ', ImportError('No module named toml',))
+
+Required python packages not installed.
+
+On a GNU/Linux or MacOS system please run:
+  sudo pip install numpy toml
+
+On Windows please run:
+  easy_install numpy toml
+
+src/lib/mixer/CMakeFiles/mixer_gen_6dof.dir/build.make:81: recipe for target 'src/lib/mixer/mixer_multirotor_6dof.generated.h' failed
+make[3]: *** [src/lib/mixer/mixer_multirotor_6dof.generated.h] Error 1
+CMakeFiles/Makefile2:3100: recipe for target 'src/lib/mixer/CMakeFiles/mixer_gen_6dof.dir/all' failed
+make[2]: *** [src/lib/mixer/CMakeFiles/mixer_gen_6dof.dir/all] Error 2
+[  0%] Built target git_nuttx_apps
+[  0%] Generating mixer_multirotor_6dof.generated.h
+[  0%] Built target uorb_headers
+[  1%] Built target git_nuttx
+Scanning dependencies of target mixer_gen
+Scanning dependencies of target airframes_xml
+('python import error: ', ImportError('No module named toml',))
+
+Required python packages not installed.
+
+On a GNU/Linux or MacOS system please run:
+  sudo pip install numpy toml
+
+On Windows please run:
+  easy_install numpy toml
+
+src/lib/mixer/CMakeFiles/mixer_gen_6dof.dir/build.make:81: recipe for target 'src/lib/mixer/mixer_multirotor_6dof.generated.h' failed
+make[7]: *** [src/lib/mixer/mixer_multirotor_6dof.generated.h] Error 1
+CMakeFiles/Makefile2:3149: recipe for target 'src/lib/mixer/CMakeFiles/mixer_gen_6dof.dir/all' failed
+make[6]: *** [src/lib/mixer/CMakeFiles/mixer_gen_6dof.dir/all] Error 2
+make[6]: *** Waiting for unfinished jobs....
+Scanning dependencies of target parameters_xml
+[  3%] Generating mixer_multirotor.generated.h
+[  3%] Generating mixer_multirotor_normalized.generated.h
+[  3%] Creating airframes.xml
+('python import error: ', ImportError('No module named toml',))
+
+Required python packages not installed.
+
+On a GNU/Linux or MacOS system please run:
+  sudo pip install numpy toml
+
+On Windows please run:
+  easy_install numpy toml
+
+src/lib/mixer/CMakeFiles/mixer_gen.dir/build.make:82: recipe for target 'src/lib/mixer/mixer_multirotor.generated.h' failed
+make[7]: *** [src/lib/mixer/mixer_multirotor.generated.h] Error 1
+make[7]: *** Waiting for unfinished jobs....
+[  3%] Generating serial_params.c
+('python import error: ', ImportError('No module named toml',))
+
+Required python packages not installed.
+
+On a GNU/Linux or MacOS system please run:
+  sudo pip install numpy toml
+
+On Windows please run:
+  easy_install numpy toml
+
+src/lib/mixer/CMakeFiles/mixer_gen.dir/build.make:107: recipe for target 'src/lib/mixer/mixer_multirotor_normalized.generated.h' failed
+make[7]: *** [src/lib/mixer/mixer_multirotor_normalized.generated.h] Error 1
+CMakeFiles/Makefile2:3216: recipe for target 'src/lib/mixer/CMakeFiles/mixer_gen.dir/all' failed
+make[6]: *** [src/lib/mixer/CMakeFiles/mixer_gen.dir/all] Error 2
+[  3%] Built target airframes_xml
+Failed to import yaml.
+You may need to install it with 'sudo pip install pyyaml'
+
+Traceback (most recent call last):
+  File "/home/ivens/Documents/src/Firmware/Tools/serial/generate_config.py", line 13, in <module>
+    import yaml
+ImportError: No module named yaml
+src/lib/parameters/CMakeFiles/parameters_xml.dir/build.make:138: recipe for target 'generated_params/serial_params.c' failed
+make[7]: *** [generated_params/serial_params.c] Error 1
+CMakeFiles/Makefile2:4154: recipe for target 'src/lib/parameters/CMakeFiles/parameters_xml.dir/all' failed
+make[6]: *** [src/lib/parameters/CMakeFiles/parameters_xml.dir/all] Error 2
+Makefile:105: recipe for target 'all' failed
+make[5]: *** [all] Error 2
+Makefile:170: recipe for target 'nuttx_px4io-v2_default' failed
+make[4]: *** [nuttx_px4io-v2_default] Error 2
+src/drivers/px4io/CMakeFiles/copy_px4io_bin.dir/build.make:98: recipe for target '../nuttx_px4io-v2_default/nuttx_px4io-v2_default.elf' failed
+make[3]: *** [../nuttx_px4io-v2_default/nuttx_px4io-v2_default.elf] Error 2
+CMakeFiles/Makefile2:4803: recipe for target 'src/drivers/px4io/CMakeFiles/copy_px4io_bin.dir/all' failed
+make[2]: *** [src/drivers/px4io/CMakeFiles/copy_px4io_bin.dir/all] Error 2
+[  1%] Built target ver_gen
+Makefile:105: recipe for target 'all' failed
+make[1]: *** [all] Error 2
+Makefile:176: recipe for target 'px4fmu-v2_default' failed
+make: *** [px4fmu-v2_default] Error 2
+
+/*solution*/
+if os not exist python-pip,sudo apt-get install python-pip.
+sudo pip install numpy toml
