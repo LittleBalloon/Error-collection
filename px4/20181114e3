@@ -1,0 +1,61 @@
+[  0%] Building px4io-v2
+make[4]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+[  0%] Built target git_nuttx_apps
+[  0%] Built target git_nuttx
+[  0%] Built target uorb_headers
+[  0%] Generating mixer_multirotor_6dof.generated.h
+[  0%] Built target ver_gen
+[  1%] Generating mixer_multirotor.generated.h
+Scanning dependencies of target git_gps_devices
+[  2%] git submodule src/drivers/gps/devices
+[  0%] Built target git_nuttx_apps
+[  1%] Built target git_nuttx
+[  1%] Generating mixer_multirotor_6dof.generated.h
+[  1%] Built target uorb_headers
+[  3%] Generating mixer_multirotor.generated.h
+[  3%] Built target airframes_xml
+[  3%] Generating mixer_multirotor_normalized.generated.h
+[  3%] Generating serial_params.c
+[  2%] Built target git_gps_devices
+Scanning dependencies of target git_ecl
+[  2%] Built target mixer_gen_6dof
+[  2%] git submodule src/lib/ecl
+Scanning dependencies of target git_mavlink_v2
+Failed to import yaml.
+You may need to install it with 'sudo pip install pyyaml'
+
+[  2%] git submodule mavlink/include/mavlink/v2.0
+Traceback (most recent call last):
+  File "/home/ivens/Documents/src/Firmware/Tools/serial/generate_config.py", line 13, in <module>
+    import yaml
+ImportError: No module named yaml
+src/lib/parameters/CMakeFiles/parameters_xml.dir/build.make:138: recipe for target 'generated_params/serial_params.c' failed
+make[7]: *** [generated_params/serial_params.c] Error 1
+CMakeFiles/Makefile2:4154: recipe for target 'src/lib/parameters/CMakeFiles/parameters_xml.dir/all' failed
+make[6]: *** [src/lib/parameters/CMakeFiles/parameters_xml.dir/all] Error 2
+make[6]: *** Waiting for unfinished jobs....
+[  2%] Generating mixer_multirotor_normalized.generated.h
+[  3%] Built target mixer_gen_6dof
+[  2%] Built target git_ecl
+[  3%] Built target mixer_gen
+Makefile:105: recipe for target 'all' failed
+make[5]: *** [all] Error 2
+Makefile:170: recipe for target 'nuttx_px4io-v2_default' failed
+make[4]: *** [nuttx_px4io-v2_default] Error 2
+src/drivers/px4io/CMakeFiles/copy_px4io_bin.dir/build.make:98: recipe for target '../nuttx_px4io-v2_default/nuttx_px4io-v2_default.elf' failed
+make[3]: *** [../nuttx_px4io-v2_default/nuttx_px4io-v2_default.elf] Error 2
+CMakeFiles/Makefile2:4803: recipe for target 'src/drivers/px4io/CMakeFiles/copy_px4io_bin.dir/all' failed
+make[2]: *** [src/drivers/px4io/CMakeFiles/copy_px4io_bin.dir/all] Error 2
+make[2]: *** Waiting for unfinished jobs....
+Scanning dependencies of target airframes_xml
+[  2%] Creating airframes.xml
+[  2%] Built target git_mavlink_v2
+[  2%] Built target mixer_gen
+[  2%] Built target airframes_xml
+Makefile:105: recipe for target 'all' failed
+make[1]: *** [all] Error 2
+Makefile:176: recipe for target 'px4fmu-v2_default' failed
+make: *** [px4fmu-v2_default] Error 2
+
+/*solution*/
+sudo pip install pyyaml
