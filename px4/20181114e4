@@ -1,0 +1,16 @@
+[100%] Building C object platforms/nuttx/CMakeFiles/nuttx_px4fmu-v2_default.elf.dir/__/__/src/platforms/empty.c.obj
+[100%] Linking CXX executable ../../nuttx_px4fmu-v2_default.elf
+/home/ivens/.gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld: ../../nuttx_px4fmu-v2_default.elf section `.text' will not fit in region `flash'
+/home/ivens/.gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld: address 0x8106144 of ../../nuttx_px4fmu-v2_default.elf section `__param' is not within region `flash'
+/home/ivens/.gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld: address 0x8106144 of ../../nuttx_px4fmu-v2_default.elf section `__param' is not within region `flash'
+/home/ivens/.gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld: address 0x8106144 of ../../nuttx_px4fmu-v2_default.elf section `__param' is not within region `flash'
+/home/ivens/.gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld: region `flash' overflowed by 28405 bytes
+collect2: error: ld returned 1 exit status
+platforms/nuttx/CMakeFiles/nuttx_px4fmu-v2_default.elf.dir/build.make:227: recipe for target 'nuttx_px4fmu-v2_default.elf' failed
+make[3]: *** [nuttx_px4fmu-v2_default.elf] Error 1
+CMakeFiles/Makefile2:7402: recipe for target 'platforms/nuttx/CMakeFiles/nuttx_px4fmu-v2_default.elf.dir/all' failed
+make[2]: *** [platforms/nuttx/CMakeFiles/nuttx_px4fmu-v2_default.elf.dir/all] Error 2
+Makefile:105: recipe for target 'all' failed
+make[1]: *** [all] Error 2
+Makefile:176: recipe for target 'px4fmu-v2_default' failed
+make: *** [px4fmu-v2_default] Error 2
